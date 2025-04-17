@@ -1,0 +1,40 @@
+[package]
+name = "fditools"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "fditools_lib"
+path = "src/lib/mod.rs"
+
+[[bin]]
+name = "fdi"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.97"
+bio = "2.2.0"
+bk-tree = "0.5.0"
+clap = { version = "4.5.1", features = ["derive"] }
+crossbeam = "0.8.4"
+crossbeam-channel = "0.5.14"
+env_logger = "0.11.8"
+flate2 = "1.1.1"
+grep-cli = "0.1.11"
+gzp = "1.0.1"
+itertools = "0.14.0"
+lazy_static = "1.5.0"
+log = "0.4.27"
+num_cpus = "1.16.0"
+rayon = "1.10.0"
+rust-htslib = "0.49.0"
+rust-lapper = "1.1.0"
+serde = { version = "1.0.219", features = ["derive"] }
+smartstring = { version = "1.0.1", features = ["serde"] }
+termcolor = "1.4.1"
+triple_accel = "0.4.0"
+
+[dev-dependencies]
+proptest = "1.6.0"
+rstest = "0.25.0"
+tempfile = "3.19.1"
