@@ -7,7 +7,7 @@ use fditools_lib::utils;
 use log::*;
 
 #[derive(Parser)]
-#[command(author, version, about, rename_all = "kebab-case")]
+#[command(version, author, about, rename_all = "kebab-case")]
 /// Commands for generating per-base analysis
 struct Args {
     #[command(subcommand)]

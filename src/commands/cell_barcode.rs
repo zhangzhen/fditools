@@ -246,7 +246,7 @@ impl ChunkProcessor for CellBarcodeProcessor {
             let (_, bc1) = found1[0];
             let (_, bc2) = found2[0];
             let desc1 = format!(
-                "{} CB:Z:{}+{}",
+                "{} CB:Z:{}{}",
                 read1.desc().unwrap_or(""),
                 str::from_utf8(bc1).unwrap(),
                 str::from_utf8(bc2).unwrap()
@@ -258,7 +258,7 @@ impl ChunkProcessor for CellBarcodeProcessor {
                 &read1.qual()[self.match_len + self.skip_len..],
             );
             let desc2 = format!(
-                "{} CB:Z:{}+{}",
+                "{} CB:Z:{}{}",
                 read2.desc().unwrap_or(""),
                 str::from_utf8(bc1).unwrap(),
                 str::from_utf8(bc2).unwrap()
