@@ -5,7 +5,7 @@
 ## Build
 
 ```sh
-cargo build --release
+cargo build --release --locked
 ```
 
 The binary is written to `target/release/fdi`.
@@ -16,3 +16,7 @@ Print the package version with `target/release/fdi --version` (or `-V`).
 
 Agent instructions live in `AGENTS.md`. See [.agents/docs/agent-setup.md](.agents/docs/agent-setup.md)
 for the layout and how to hook up your agent.
+
+## License
+
+Licensed under the [MIT License](LICENSE).
