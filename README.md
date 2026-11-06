@@ -10,6 +10,8 @@ cargo build --release
 
 The binary is written to `target/release/fdi`.
 
+Print the package version with `target/release/fdi --version` (or `-V`).
+
 ## Working with coding agents
 
 Agent instructions live in `AGENTS.md`. See [.agents/docs/agent-setup.md](.agents/docs/agent-setup.md)
