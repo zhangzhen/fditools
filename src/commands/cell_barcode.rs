@@ -348,7 +348,7 @@ mod tests {
         let desc1 = rp.0.desc().unwrap();
         let desc1_parts: Vec<&str> = desc1.split(' ').collect();
         let cb_tag1 = desc1_parts[desc1_parts.len() - 1];
-        assert_eq!(cb_tag1, "CB:Z:TGAAGTATTGT+TATATTGTGAG");
+        assert_eq!(cb_tag1, "CB:Z:TGAAGTATTGTTATATTGTGAG");
 
         let desc2 = rp.1.desc().unwrap();
         let desc2_parts: Vec<&str> = desc2.split(' ').collect();
